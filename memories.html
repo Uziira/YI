@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-image: url('background_index2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff5a85;
+    text-align: center;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.9); /* fond semi-transparent */
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-size: 3rem;
+  }
+
+  .container {
+    background: rgba(255,255,255,0.9);
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+  }
+
+  .memory-item {
+    margin-bottom: 30px;
+  }
+
+  .memory-item img, 
+  .memory-item video, 
+  .memory-item audio {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .memory-item p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+  }
+
+  a.back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff5a85;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>💖 Our Memories</h1>
+
+  <!-- Exemple d'image -->
+  <div class="memory-item">
+    <p>First screenshot together</p>
+    <img src="screenshot1.png" alt="Screenshot">
+  </div>
+
+
+  <!-- Exemple d'audio -->
+  <div class="memory-item">
+    <p>Voice message from her</p>
+    <audio controls>
+      <source src="voice_message.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Tu peux ajouter d'autres souvenirs ici -->
+  <div class="memory-item">
+    <p>Another screenshot or photo</p>
+    <img src="screenshot2.png" alt="Screenshot 2">
+  </div>
+
+  <a class="back" href="index.html">← Back to timeline</a>
+</div>
+
+</body>
+</html>
