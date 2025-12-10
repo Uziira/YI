@@ -8,8 +8,10 @@
 
 <style>
   html, body {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
   }
 
   body {
@@ -19,6 +21,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* reste fixe en scrollant */
+    padding: 20px 0;
   }
 
   h1 {
@@ -34,19 +38,10 @@
     padding: 40px;
     border-radius: 25px;
     max-width: 700px;
-    margin: 60px auto;
+    width: 90%;
+    margin: 0 auto 60px auto;
     box-shadow: 0 4px 25px rgba(0,0,0,0.2);
     backdrop-filter: blur(3px);
-  }
-
-  /* IMAGE À LA FIN */
-  .story-image {
-    display: block;
-    max-width: 70%;   /* image plus petite */
-    height: auto;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
 
   .content {
@@ -72,6 +67,15 @@
     color: #ff5a85;
     font-weight: bold;
     font-size: 1.2rem;
+  }
+
+  .story-image {
+    display: block;
+    max-width: 50%;   /* image plus petite */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
 </style>
 </head>
