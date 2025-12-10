@@ -8,22 +8,25 @@
 
 <style>
   html, body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
   }
 
   body {
-    margin: 0;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #000;
     background-image: url('background_index2.jpg');
-    background-size: cover;
+    background-size: cover;           /* couvre toute la zone disponible */
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;     /* reste fixe en scrollant */
+    padding: 20px 0;
   }
 
   h1 {
-    font-family: 'Dancing Script', cursive; /* FIX ICI */
+    font-family: 'Dancing Script', cursive;
     color: #ff5a85;
     margin-top: 0;
     margin-bottom: 20px;
@@ -31,18 +34,30 @@
   }
 
   .container {
-    background: rgba(255,255,255,0.90);
+    background: rgba(255,255,255,0.9);
     padding: 40px;
     border-radius: 25px;
     max-width: 700px;
-    margin: 60px auto;
+    width: 90%;
+    margin: 0 auto 60px auto;
     box-shadow: 0 4px 25px rgba(0,0,0,0.2);
     backdrop-filter: blur(3px);
   }
 
   .content {
-    text-align: center;
+    text-align: left;
     color: #333;
+  }
+
+  .content p {
+    margin: 15px 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #ff5a85;
   }
 
   a.back {
@@ -53,6 +68,16 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
+
+  .story-image {
+    display: block;
+    max-width: 50%;  /* image plus petite */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
 </style>
 </head>
 
@@ -62,9 +87,33 @@
   <h1>✨ Today</h1>
 
   <div class="content">
-    <p>Write your story here...</p>
+    <p>Here we are several weeks later, to be exact three months after confessing our feelings.</p>
+    <p>This website is a gift for the best woman in the world, the one who shares my life, despite the distance, every day, through bad and good days.</p>
+    <p>You must be wondering how these last three months have been going? Well, I'll tell you everything.</p>
+    <p>During those three months, we laughed, we played games, we cried, we argued (a lot), we shared our lives, what we ate, what we did after school or work. We made plans for the future. We wanted to buy a little cat, a slightly overweight one.</p>
+    <p>We even planned to travel together on August 1, 2026. I'm finally going to see her. We're going to travel for a little over two weeks to several cities in China. Psss: my plane ticket is non-refundable, so we have to go hehe.</p>
+    <p>We sent each other gifts, but she hasn't seen what I sent her yet because everything is at her grandmother's house. Sending these gifts to her school would be very risky because of the possibility of theft. I can't wait for her to see them, because these are gifts she will see every day, and she will never be able to forget me.</p>
+    <p>Everything is wonderful, but unfortunately the distance and the language barrier often make it difficult for us to understand each other, and this leads us to argue over little things that aren't worth it...</p>
+    <p>Every misunderstanding breaks my heart, keeps me awake at night, and makes me sad all day long. And I know that for her, it's the same thing.</p>
+    <p>Fortunately, it never lasts long because we quickly manage to understand each other and move on.</p>
+    <p><span class="highlight">UPDATE:</span> We just broke up.</p>
+    <p>I understand the reasons she gave me, but at the same time, I don't really understand why she suddenly told me that. Yesterday, I received her gifts. I cried with joy like never before.</p>
+    <p>I thought everything was fine on her side too, I didn't know that the next day she would want to leave me.</p>
+    <p>She is a wonderful person, the best person I have ever met. Being apart from her breaks my heart. I believe this isn’t the end. She just needs time to sort out her emotions.</p>
+    <p>艺, I'm talking to you now. Give our love, our relationship, our story, and our future a chance.</p>
+    <p>I am convinced that we can achieve so much together. I am convinced that if we fight for our love, our future, our flaws, and our communication problems, we can become better people and happy people—but happy together.</p>
+    <p>I already said it at the time, but if we manage to overcome these trials, who in the world could separate us? Who could separate two souls who have fought for months for their love?</p>
+    <p>As I said in my letter for our 3rd months together: <span class="highlight">山无棱，天地合，乃敢与君绝</span></p>
+    <p>I don't want our story to become just a memory; I want it to last forever. I also don't want to live with regrets like, “What if I had fought for our relationship? Would we still be together?”</p>
+    <p>No matter how long it takes, I will wait for you. I believe in us. I am willing to give you the time and space you need, because our love is worth it.</p>
+    <p>艺, wherever you are, I am thinking of you, hoping we can find our way back to each other. You are the person I want by my side, through all the ups and downs.</p>
+
     <a class="back" href="index.html">← Back to timeline</a>
   </div>
+
+  <!-- IMAGE À LA FIN -->
+  <img src="proverbe_chinois.png" alt="Un moment spécial" class="story-image">
+
 </div>
 
 </body>
