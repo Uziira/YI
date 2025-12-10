@@ -3,112 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Memories</title>
+<title>Memories</title>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    height: auto;
-  }
-
   body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: #000;
     background-image: url('background_index2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 20px 0;
+    color: #333;
+  }
+
+  .main-header {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px auto 60px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
 
   h1 {
     font-family: 'Dancing Script', cursive;
     color: #ff5a85;
-    text-align: center;
-    margin-bottom: 40px;
-    background: rgba(255, 255, 255, 0.9); /* fond semi-transparent */
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    font-size: 3rem;
+    margin: 0;
   }
 
-  .container {
-    background: rgba(255,255,255,0.9);
+  .memories-container {
     max-width: 900px;
-    width: 90%;
     margin: 0 auto 60px auto;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .memory-item {
-    margin-bottom: 30px;
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
   }
 
-  .memory-item img, 
-  .memory-item video, 
-  .memory-item audio {
-    display: block;
-    max-width: 100%;
-    margin: 10px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  .memory-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
   .memory-item p {
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin-top: 10px;
+    font-size: 1rem;
     color: #333;
-    margin: 10px 0;
   }
 
-  a.back {
+  .memory-item audio {
+    margin-top: 10px;
+    width: 90%;
+    outline: none;
+  }
+
+  .back {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     text-decoration: none;
     color: #ff5a85;
     font-weight: bold;
     font-size: 1.2rem;
   }
 
+  @media (max-width: 600px) {
+    .main-header {
+      padding: 40px 15px;
+    }
+    .memory-item {
+      padding: 15px;
+    }
+  }
 </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>💖 Our Memories</h1>
+<header class="main-header">
+  <h1>🎞 Memories</h1>
+</header>
 
-  <!-- Exemple d'image -->
+<div class="memories-container">
+  <!-- Tes 15 images -->
   <div class="memory-item">
-    <p>First screenshot together</p>
-    <img src="screenshot1.png" alt="Screenshot">
+    <img src="bague.png" alt="Memory 1">
+    <p>A ring she made by hand—she's a real artist</p>
+  </div>
+  <div class="memory-item">
+    <img src="Coeur.jpg" alt="Memory 2">
+    <p>A small, very touching photo full of love</p>
+  </div>
+  <div class="memory-item">
+    <img src="coque_tel.jpg" alt="Memory 3">
+    <p>A handmade phone case, unfortunately, she didn't like it, but it is beautiful</p>
+  </div>
+  <div class="memory-item">
+    <img src="Elle.jpg" alt="Memory 4">
+    <p>The most beautiful woman, we have the same pant hehe</p>
+  </div>
+  <div class="memory-item">
+    <img src="elle2.jpg" alt="Memory 5">
+    <p>The first photo I got of her, she's beautiful. My heart was beating very fast when I saw it</p>
+  </div>
+  <div class="memory-item">
+    <img src="insta_screen.png" alt="Memory 6">
+    <p>A little sticker sent on Instagram, but when she sent it to me, I was on the subway and I shed a few tears of joy</p>
+  </div>
+  <div class="memory-item">
+    <img src="lettre3.jpg" alt="Memory 7">
+    <p>The first letter she sent me, I couldn't help but cry</p>
+  </div>
+  <div class="memory-item">
+    <img src="lettre.jpg" alt="Memory 8">
+    <p>The next part of the previous letter</p>
+  </div>
+  <div class="memory-item">
+    <img src="lettre2.jpg" alt="Memory 9">
+    <p>Another letter</p>
+  </div>
+  <div class="memory-item">
+    <img src="main.jpg" alt="Memory 10">
+    <p>A little wave with her friend, but it warms my heart</p>
+  </div>
+  <div class="memory-item">
+    <img src="main2.jpg" alt="Memory 11">
+    <p>Another one, I even put this one on my profile picture haha</p>
+  </div>
+  <div class="memory-item">
+    <img src="note_2.png" alt="Memory 12">
+    <p>A short letter that I didn't understand at first</p>
+  </div>
+  <div class="memory-item">
+    <img src="note_1.png" alt="Memory 13">
+    <p>Another one</p>
+  </div>
+  <div class="memory-item">
+    <img src="oeil.jpg" alt="Memory 14">
+    <p>Look how beautiful her eyes, nose, lips are</p>
+  </div>
+  <div class="memory-item">
+    <img src="voyage.jpg" alt="Memory 15">
+    <p>A sheet of paper where she had started to plan our trip</p>
   </div>
 
-
-  <!-- Exemple d'audio -->
+  <!-- Message vocal à la toute fin -->
   <div class="memory-item">
-    <p>Voice message from her</p>
+    <p>Voice message from her 💌</p>
     <audio controls>
-      <source src="voice_message.mp3" type="audio/mpeg">
+      <source src="audio.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <a class="back" href="index.html">← Back to timeline</a>
   </div>
-
-  <!-- Tu peux ajouter d'autres souvenirs ici -->
-  <div class="memory-item">
-    <p>Another screenshot or photo</p>
-    <img src="screenshot2.png" alt="Screenshot 2">
-  </div>
-
-  <a class="back" href="index.html">← Back to timeline</a>
 </div>
 
 </body>
