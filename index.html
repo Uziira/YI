@@ -5,37 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Journey with 艺</title>
 
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 <style>
-  html, body {
-    height: 100%;
+  body {
     margin: 0;
-  }
-
-  /* FOND FIXE QUI COUVRE TOUT */
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
     background-image: url('background_index2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* derrière tout le contenu */
-  }
-
-  /* ENLÈVE LES SOULIGNEMENTS DES LIENS */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -46,6 +28,10 @@
 
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.2rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.9rem; }
 
   .main-header {
     background: #fff;
@@ -72,14 +58,12 @@
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    color: #333;
     text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
   }
 
-  .event:hover {
-    transform: scale(1.03);
+  .event a {
+    text-decoration: none;
+    color: #ff5a85;
   }
 
   footer {
@@ -95,41 +79,30 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* RESPONSIVE : sur mobile, 1 colonne */
-  @media screen and (max-width: 600px) {
-    .timeline {
-      grid-template-columns: 1fr;
-    }
-  }
 </style>
 </head>
-
 <body>
-
-<!-- FOND FIXE -->
-<div class="background"></div>
 
 <header class="main-header">
   <h1>My Journey with 艺</h1>
 </header>
 
 <div class="timeline">
-  <a class="event" href="how-we-met.html">
-    <h2>📅 How We Met</h2>
-  </a>
-
-  <a class="event" href="first-conversations.html">
-    <h2>💬 First Conversations</h2>
-  </a>
-
-  <a class="event" href="when-everything-changed.html">
-    <h2>💞 When Everything Changed</h2>
-  </a>
-
-  <a class="event" href="today.html">
-    <h2>✨ Today</h2>
-  </a>
+  <div class="event">
+    <a href="how-we-met.html"><h2>📅 How We Met</h2></a>
+  </div>
+  <div class="event">
+    <a href="first-conversations.html"><h2>💬 First Conversations</h2></a>
+  </div>
+  <div class="event">
+    <a href="when-everything-changed.html"><h2>💞 When Everything Changed</h2></a>
+  </div>
+  <div class="event">
+    <a href="today.html"><h2>✨ Today</h2></a>
+  </div>
+  <div class="event">
+    <a href="memories.html"><h2>🎞 Memories</h2></a>
+  </div>
 </div>
 
 <footer>Made with love ❤️</footer>
