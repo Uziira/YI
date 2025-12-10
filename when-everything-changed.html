@@ -9,11 +9,10 @@
 <style>
   html, body {
     height: 100%;
+    margin: 0;
   }
 
   body {
-    margin: 0;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #000;
     background-image: url('background_index2.jpg');
@@ -31,7 +30,7 @@
   }
 
   .container {
-    background: rgba(255,255,255,0.90);
+    background: rgba(255,255,255,0.9);
     padding: 40px;
     border-radius: 25px;
     max-width: 700px;
@@ -40,9 +39,30 @@
     backdrop-filter: blur(3px);
   }
 
+  /* IMAGE À LA FIN */
+  .story-image {
+    display: block;
+    max-width: 70%;   /* image plus petite */
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
   .content {
-    text-align: center;
+    text-align: left;
     color: #333;
+  }
+
+  .content p {
+    margin: 15px 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #ff5a85;
   }
 
   a.back {
@@ -62,9 +82,20 @@
   <h1>💞 When Everything Changed</h1>
 
   <div class="content">
-    <p>Write your story here...</p>
+    <p>As you can probably imagine, the famous day came when the barrier of friendship was crossed.</p>
+    <p>And as mentioned earlier, that day finally arrived.</p>
+    <p>That day, I asked her, <span class="highlight">“What do you think of me?”</span></p>
+    <p>Then I asked her, <span class="highlight">“Do you want to be less than friends with me, or more?”</span></p>
+    <p>And I'll never forget what happened next: she said, <span class="highlight">“More.”</span></p>
+    <p>Do you realize that? The woman I was secretly in love with told me she wanted to be more than friends with me.</p>
+    <p>That day was September 9, 2025, and it became the best day of my life.</p>
+
     <a class="back" href="index.html">← Back to timeline</a>
   </div>
+
+  <!-- IMAGE À LA FIN -->
+  <img src="Bestday.png" alt="Un moment inoubliable" class="story-image">
+
 </div>
 
 </body>
