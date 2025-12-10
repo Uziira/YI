@@ -5,18 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Journey with 艺</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 <style>
+  html, body {
+    height: 100%;
+  }
+
   body {
     margin: 0;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #333;
     background-image: url('background_index2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  /* ENLÈVE LES SOULIGNEMENTS DES LIENS */
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -27,6 +37,8 @@
 
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.2rem; }
 
   .main-header {
     background: #fff;
@@ -54,12 +66,13 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
   }
 
-  .event a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+  .event:hover {
+    transform: scale(1.03);
   }
 
   footer {
@@ -77,6 +90,7 @@
   }
 </style>
 </head>
+
 <body>
 
 <header class="main-header">
@@ -84,20 +98,26 @@
 </header>
 
 <div class="timeline">
-  <div class="event">
-    <a href="how-we-met.html"><h2>📅 How We Met</h2></a>
-  </div>
-  <div class="event">
-    <a href="first-conversations.html"><h2>💬 First Conversations</h2></a>
-  </div>
-  <div class="event">
-    <a href="when-everything-changed.html"><h2>💞 When Everything Changed</h2></a>
-  </div>
-  <div class="event">
-    <a href="today.html"><h2>✨ Today</h2></a>
-  </div>
+
+  <a class="event" href="how-we-met.html">
+    <h2>📅 How We Met</h2>
+  </a>
+
+  <a class="event" href="first-conversations.html">
+    <h2>💬 First Conversations</h2>
+  </a>
+
+  <a class="event" href="when-everything-changed.html">
+    <h2>💞 When Everything Changed</h2>
+  </a>
+
+  <a class="event" href="today.html">
+    <h2>✨ Today</h2>
+  </a>
+
 </div>
 
 <footer>Made with love ❤️</footer>
+
 </body>
 </html>
